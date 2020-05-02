@@ -1,7 +1,7 @@
 from decouple import config
 
 class Config:
-    SECRET_KEY = 'codigofacilito'
+    SECRET_KEY = 'pruebaproyecto'
 
 class DevelopmentConfig(Config):
     DEBUG = True
@@ -11,8 +11,8 @@ class DevelopmentConfig(Config):
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
-    MAIL_USERNAME = config('MAIL_USERNAME', default='eduardo78@gmail.com')
-    MAIL_PASSWORD = config('MAIL_PASSWORD', default='googlecrispin123')
+    MAIL_USERNAME = config('MAIL_USERNAME', default='pythonflask@gmail.com')
+    MAIL_PASSWORD = config('MAIL_PASSWORD', default='google123')
 
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/project_web_facilito_test'
